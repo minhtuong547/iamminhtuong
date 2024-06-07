@@ -1,0 +1,9 @@
+<big>Các file nghi ngờ</big>
+
+<?php
+
+$saif = shell_exec(' grep -Ril "api" ');
+
+echo "<pre>$saif</pre>";
+
+?>

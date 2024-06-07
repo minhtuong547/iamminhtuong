@@ -1,0 +1,1 @@
+$(document).ready((function(){var e=$(".sticky"),o="sticky-pin",t=e.offset().top;function n(){$(this).scrollTop()>=t?e.addClass(o):e.removeClass(o)}n(),$(window).scroll((function(){n()})),$(".header-toggler").on("click",(function(e){$(".page-header").toggleClass("active"),e.preventDefault()}))}));

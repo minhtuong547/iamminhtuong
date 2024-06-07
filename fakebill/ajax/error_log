@@ -1,0 +1,6 @@
+[07-May-2024 10:28:37 UTC] PHP Notice:  Undefined index: forbank in /home/iamminht/profile/fakebill/ajax/vietcombank.php on line 3
+[07-May-2024 12:28:12 UTC] PHP Notice:  Undefined index: forbank in /home/iamminht/profile/fakebill/ajax/vietcombank.php on line 3
+[07-May-2024 12:29:35 UTC] PHP Notice:  Undefined variable: stk_di in /home/iamminht/profile/fakebill/ajax/vietinbank.php on line 243
+[08-May-2024 05:02:19 UTC] PHP Notice:  Undefined index: forbank in /home/iamminht/profile/fakebill/ajax/vietcombank.php on line 3
+[08-May-2024 05:06:38 UTC] PHP Notice:  Undefined index: forbank in /home/iamminht/profile/fakebill/ajax/vietcombank.php on line 3
+[08-May-2024 15:45:20 UTC] PHP Notice:  Undefined index: forbank in /home/iamminht/profile/fakebill/ajax/vietcombank.php on line 3

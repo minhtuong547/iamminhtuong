@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c>  
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R]
+  
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+RewriteCond %{HTTP_HOST} ^www\.taoshopauto\.com$
+RewriteRule ^/?$ "https\:\/\/taoshopauto\.com\/" [R=301,L]
+
+#Lỗi không tồn tại
+ErrorDocument 404 /?widget=404
+ErrorDocument 402 /?widget=404
+ErrorDocument 403 /?widget=404
+ErrorDocument 404 /?widget=404
+ErrorDocument 500 /?widget=404
+Options All -Indexes
+
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript
+
+BrowserMatch ^Chrome/4 gzip-only-text/html
+
+BrowserMatch ^Chrome/4.0[678] no-gzip
+
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+
+</IfModule>
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>

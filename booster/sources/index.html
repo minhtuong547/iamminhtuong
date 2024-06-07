@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3367D6">
+    <meta name="author" content="Latiuem">
+    <meta name="description" content="Chia sẽ mã nguồn website, thông tin giới thiệu">
+    <meta name="keywords" content="Source code website, source code website latiuem">
+    <title>Source Code Website</title>
+    <link rel="shortcut icon" href="assets/img/img2.jpg">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker|Carter One|Potta One|Rowdies">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js' type='text/javascript'></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src='./assets/script.js' type='text/javascript'></script>
+    <audio src="assets/mp3/ngaynaodo.mp3" id="myaudio" autoplay="autoplay"></audio>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <style type="text/css">
+      .no-js #loader { display: none;  }
+      .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+      .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(https://blog.motionisland.com/wp-content/uploads/2022/03/Loading_27.gif) center no-repeat #000000;
+      }
+        </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<div class="root-container">
+      <header class="header-container">
+        <div class="post-image" style="background-image: url(https://i.ex-cdn.com/mgn.vn/files/news/2021/11/23/gia-toc-uchiha-va-nhung-su-that-thu-vi-ma-ban-chua-biet-011946.jpg)"></div>
+          <div class="navbar-content">
+           <div class="navbar-link">
+              <div class="navbar-btn">
+              </div>
+             <ul class="navbar-list">
+                <li class="navbar-list-item">
+                </li>
+                <li class="navbar-list-item">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="header-content">
+          <div class="post-text layout-block layout-padding">
+            <h1 class="flipX">Đinh Minh Tướng</h1>
+        <strong style="color: rgb(40, 240, 0);font-family: 'Rowdies';font-size: 16px;" >Hoạt động được:&ensp;</strong><span style="color: rgb(0, 240, 120);
+            animation: colorRotate 2.5s linear 0s infinite;
+            @keyframes colorRotate {
+                from {
+                  color: #FF0000;
+                }
+                10% {
+                  color: #00FFFF;
+                }
+                50% {
+                  color: #00FF00;
+                }
+                 100% {
+                  color: #FFFF00;
+                }
+              } font-size: 16px; font-family: 'Rowdies';" id="momk"></span><script>
+              function star() {
+                setTimeout(function () {
+                }, 3000);
+            }
+            function show_date_time() {
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay = new Date("2023/08/13");
+                today = new Date();
+                timeold = (today.getTime() - BirthDay.getTime());
+                sectimeold = timeold / 1000
+                secondsold = Math.floor(sectimeold);
+                msPerDay = 24 * 60 * 60 * 1000
+                e_daysold = timeold / msPerDay
+                daysold = Math.floor(e_daysold);
+                e_hrsold = (daysold - e_daysold) * -24;
+                hrsold = Math.floor(e_hrsold);
+                e_minsold = (hrsold - e_hrsold) * -60;
+                minsold = Math.floor((hrsold - e_hrsold) * -60);
+                seconds = Math.floor((minsold - e_minsold) * -60);
+                momk.innerHTML = daysold + " ngày " + hrsold + " giờ " + minsold + " phút " + seconds + " giây";
+            }
+            show_date_time();
+            </script>
+          </div>
+        </div>
+      </header>
+<div class="body-container">
+        <div class="content-container layout-block article-list">
+         <!--  <div class="article-item layout-padding">--> 
+            <div class="article-item layout-padding">
+              <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+                <div class="card-cover" background-image-lazy="" style="background-image: url();"></div>
+                <div class="card-text">
+                    <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                      <i class="bi bi-code-slash">&ensp;</i>Tool Gộp Siu Vip V1 #1</h2>
+                  <div class="card-text--row">
+                    <span>Tool Gộp By iamminhtuong.vn<br>
+                    Với Nhiều Lựa Chọn Tool Bao Gồm Tds Ttc SpamSMS... </span>
+                  </div>
+                  <ul class="wrap-list dark">
+                    <li>
+                      <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                    </li>
+                  </ul>
+                  <ul class="wrap-list dark">
+                    <li>
+                      <button onclick="taixuong_1()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống</button>
+                    </li>
+                    <script> 
+                      function taixuong_1() {
+                        window.location = "assets/tools/lattoolgopv1.py", "_blank";
+                      }
+                      </script>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            
+          <div class="article-item layout-padding">
+            <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+           <div class="card-cover" background-image-lazy="" data-img="" style="background-image: url();"></div>
+            <div class="card-text">
+                  <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                    <i class="bi bi-code-slash">&ensp;</i>Thông Tin Giới Thiệu #1</h2>
+                <div class="card-text--row">
+                  <span>Mẫu giới thiệu bản thân đơn giản<br>Tương tự iamminhtuong.vn</span>
+                </div>
+                <ul class="wrap-list dark">
+                  <li>
+                    <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                  </li>
+                </ul>
+                <ul class="wrap-list dark">
+                  <li>
+                 <button onclick="xem_truoc_2()" class="button-view" role="button"><i class="bi bi-eye">&ensp;</i>Xem Trước</button>
+                  </li>&emsp;
+                  <li>
+                    <button onclick="taixuong_2()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống</button>
+                  </li>
+                  <script> 
+                    function xem_truoc_2() {
+                      window.open("http://iamminhtuong.vn", "_blank");
+                    }
+
+                    function taixuong_2() {
+                      window.location = "assets/src/thongtincanhan.zip", "_blank";
+                    }
+                    </script>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="article-item layout-padding">
+            <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+              <div class="card-cover" background-image-lazy="" style="background-image: url();"></div>
+              <div class="card-text">
+                  <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                    <i class="bi bi-code-slash">&ensp;</i>Star Light #1</h2>
+                <div class="card-text--row">
+                  <span>Bản dùng để chill với phong cách dân developer=))<br>
+                  Dùng để nghe miu síc</span>
+                </div>
+                <ul class="wrap-list dark">
+                  <li>
+                    <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                  </li>
+                </ul>
+                <ul class="wrap-list dark">
+                  <li>
+                 <button onclick="xem_truoc_3()" class="button-view" role="button"><i class="bi bi-eye">&ensp;</i>Xem Trước</button>
+                  </li>&emsp;
+                  <li>
+                    <button onclick="taixuong_3()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống</button>
+                  </li>
+                  <script> 
+                    function xem_truoc_3() {
+                      window.open("http://iamminhtuong.vn/booster/starlight/", "_blank");
+                    }
+
+                    function taixuong_3() {
+                      window.location = "assets/src/leanhtuanstartlight.zip", "_blank";
+                    }
+                    </script>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="article-item layout-padding">
+            <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+              <div class="card-cover" background-image-lazy="" style="background-image: url();"></div>
+              <div class="card-text">
+                  <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                    <i class="bi bi-code-slash">&ensp;</i>Tool spam sms v1 - v2</h2>
+                <div class="card-text--row">
+                  <span>Spam sms tương đối mạnh<br>
+                    Có thể spam liên tục tùy chỉnh
+                  </span>
+                </div>
+                  <ul class="wrap-list dark">
+                  <li>
+                    <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                  </li>
+                </ul>
+                <ul class="wrap-list dark">
+                  <li>
+                 <button onclick="taixuong_v1()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống v1</button>
+                  </li>&emsp;
+                  <li>
+                    <button onclick="taixuong_v2()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống v2</button>
+                  </li>
+                  <script> 
+                    function taixuong_v1() {
+                      window.location = "assets/tools/spamsmsv1.py", "_blank" ;
+                    }
+
+                    function taixuong_v2() {
+                      window.location = "assets/tools/spamsmsv2.py", "_blank";
+                    }
+                    </script>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="article-item layout-padding">
+            <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+              <div class="card-cover" background-image-lazy="" style="background-image: url();"></div>
+              <div class="card-text">
+                  <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                    <i class="bi bi-code-slash">&ensp;</i>Thông Tin Giới Thiệu #2</h2>
+                <div class="card-text--row">
+                  <span>Bản giới thiệu v2<br>
+                  Background mới có fps...</span>
+                </div>
+                <ul class="wrap-list dark">
+                  <li>
+                    <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                  </li>
+                </ul>
+                <ul class="wrap-list dark">
+                  <li>
+                 <button onclick="xem_truoc_4()" class="button-view" role="button"><i class="bi bi-eye">&ensp;</i>Xem Trước</button>
+                  </li>&emsp;
+                  <li>
+                    <button onclick="taixuong_4()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống</button>
+                  </li>
+                  <script> 
+                    function xem_truoc_4(){
+                      window.open("https://leanhtuan19.github.io/thongtincanhan2/?fbclid=IwAR2RPzsRh4FQlBdHm-kvJDftbeUTITTlkoiwrSNuUXKkzDVH7GkuqniiB7o", "_blank");
+                    }
+
+                    function taixuong_4() {
+                      window.location = "assets/src/thongtincanhan2.zip", "_blank";
+                    }
+                    </script>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="article-item layout-padding">
+            <!--  <div class="article-item layout-padding">--> 
+               <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+              <div class="card-cover" background-image-lazy="" data-img="" style="background-image: url();"></div>
+               <div class="card-text">
+                     <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                       <i class="bi bi-code-slash">&ensp;</i>Thông Tin Giới Thiệu #5</h2>
+                   <div class="card-text--row">
+                     <span>Mẫu giới thiệu thông tin <br>Có hiệu ứng chuột kháng màu siu đẹp =))))))</span>
+                   </div>
+                   <ul class="wrap-list dark">
+                     <li>
+                       <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                     </li>
+                   </ul>
+                   <ul class="wrap-list dark">
+                     <li>
+                    <button onclick="xem_truoc_5()" class="button-view" role="button"><i class="bi bi-eye">&ensp;</i>Xem Trước</button>
+                     </li>&emsp;
+                     <li>
+                       <button onclick="taixuong_5()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống</button>
+                     </li>
+                     <script> 
+                       function xem_truoc_5() {
+                         window.open("https://leanhtuan19.github.io/iamminhtuong.vn/?fbclid=IwAR2E_PaywQkPjkeKG1IBMBU4n7ZKuln3ZlevL6G_4BCtKdXQVVoMWRkffz4", "_blank");
+                       }
+   
+                       function taixuong_5() {
+                         window.location = "assets/src/leanhtuaninfo.zip", "_blank";
+                       }
+                       </script>
+                   </ul>
+                 </div>
+               </article>
+             </div>
+             <div class="article-item layout-padding">
+              <article class="card-container article-card content-padding--large soft-size--large soft-style--box">
+                <div class="card-cover" background-image-lazy="" style="background-image: url();"></div>
+                <div class="card-text">
+                    <h2 class="card-text--title" style="color: rgb(0, 247, 255); font-family: 'Potta One'; text-shadow: 0 0 3px rgb(255, 255, 255) , 0 0 3pxrgb(255, 255, 255);">
+                      <i class="bi bi-code-slash">&ensp;</i>Mẫu Deface Html Hắc Cơ #6</h2>
+                  <div class="card-text--row">
+                    <span>Mẫu cảnh báo deface xâm nhập<br>
+                    Giao diện đơn giản cũng ra dáng nắc cơ</span>
+                  </div>
+                  <ul class="wrap-list dark">
+                    <li>
+                      <a href="http://iamminhtuong.vn/chinhsach">📒 Policy About</a>
+                    </li>
+                  </ul>
+                  <ul class="wrap-list dark">
+                    <li>
+                      <button onclick="taixuong_6()" class="button-download" role="button"><i class="bi bi-download">&ensp;</i>Tải Xuống</button>
+                    </li>
+                    <script> 
+                      function taixuong_6() {
+                        window.location = "assets/src/srcdefaceByLat.zip", "_blank";
+                      }
+                      </script>
+                  </ul>
+                </div>
+              </article>
+            </div>
+  
+          <!-- card end --> 
+        </div>
+      </div>
+        <!-- page container -->
+      <div class="pagination">
+        <div class="pagination-container">
+            <div class="pagination-hover-overlay"></div>
+            <a onclick="error_back_next()" href="#0" class="pagination-prev">
+                <span class="icon-pagination icon-pagination-prev">
+                    <i class="bi bi-arrow-left-circle">
+                      &ensp;BACK
+                    </i>
+                </span>
+            </a>
+            <a class="pagination-page-number">1</a>
+            <a href="source-code-websites-page-2" class="pagination-page-number">2</a>
+            <a href="source-code-websites-page-3" class="pagination-page-number">3</a>
+            <a onclick="error_page()" class="pagination-page-number">4</a>
+            <a onclick="error_page()" class="pagination-page-number">5</a>
+            <a onclick="error_page()" class="pagination-page-number">6</a>
+            <a onclick="error_page()" class="pagination-page-number">7</a>
+                <a onclick="error_back_next()" href="#0" class="pagination-prev">
+                <span class="icon-pagination icon-pagination-next">
+                 NEXT&ensp;<i class="bi bi-arrow-right-circle">
+
+                    </i>
+                </span>
+            </a>
+        </div>
+    </div><br><br>
+   <div class="article-cover card-container content-padding-large soft-size--large soft-style--box img">
+      <div class="card-text">
+        <h2 style="text-align: center; font-size: 16px;color: rgb(255, 255, 255);text-shadow: 0 0 10px rgb(255, 255, 255);">
+          - COMMENTS ĐỂ ĐƯỢC HỖ TRỢ -
+        </h2>
+    </div>
+    </div>
+    <br>
+    <div id="graphcomment">
+    </div>
+<script type="text/javascript">
+  var __semio__params = {
+    graphcommentId: "0968091844", 
+
+    behaviour: {
+    },
+
+  }
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+</script>
+      <!-- footer container -->
+      <footer id="footer" class="footer">
+        <div class="footer-container">
+          <div class="social-icons">
+            <a href="https://github.com/leanhtuan19" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+              </svg>
+            </a>
+          </div>
+          <p>Admin: <a href="https://www.facebook.com/latvnnb" target="_blank">Đinh Minh Tướng</a>
+          </p>
+          <p>All rights reserved - © 2023<a href="http://iamminhtuong.vn" target="_blank" rel="noopener noreferrer"> - Đinh Minh Tướng</a>
+          </p>
+          <p>
+            <a href="javascript:void;" id="theme-light">🌞 Light Mode |</a>
+            <a href="javascript:void;" id="theme-dark">🌛 Dark Mode |</a>
+            <a href="javascript:void;" id="theme-auto">🤖️ Auto Mode</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="back-to-top-fixed soft-size--round soft-style--box">
+      <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+        <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+        <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+      </svg>
+    </div>
+
+      </div>
+    </div>
+    <script>
+      TurnonHomelatiuem();
+
+function TurnonHomelatiuem() {
+    Swal.fire(
+        'Thông báo',
+        'Nếu có thể hãy truy cập website <a style="color:blue;" href="https://iamminhtuong.vn/" target="_blank">iamminhtuong.vn</a> bằng máy tính ( để có cái nhìn bao quát ) !',
+        'info'
+    )
+}
+      $(window).load(function() {
+  $(".loader").delay(0).fadeOut("fast");
+  })
+      var stop, staticx;
+    var img = new Image();
+    img.src = "https://i.imgur.com/R9XUjfF.png";
+      function Sakura(x, y, s, r, fn) {
+        this.x = x;
+        this.y = y;
+        this.s = s;
+        this.r = r;
+        this.fn = fn;
+      }
+    
+      Sakura.prototype.draw = function(cxt) {
+        cxt.save();
+        var xc = 40 * this.s / 4;
+        cxt.translate(this.x, this.y);
+        cxt.rotate(this.r);
+        cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
+        cxt.restore();
+      }
+    
+      Sakura.prototype.update = function() {
+        this.x = this.fn.x(this.x, this.y);
+        this.y = this.fn.y(this.y, this.y);
+        this.r = this.fn.r(this.r);
+        if(this.x > window.innerWidth ||
+          this.x < 0 ||
+          this.y > window.innerHeight ||
+          this.y < 0
+        ) {
+          this.r = getRandom('fnr');
+          if(Math.random() > 0.4) {
+            this.x = getRandom('x');
+            this.y = 0;
+            this.s = getRandom('s');
+            this.r = getRandom('r');
+          } else {
+            this.x = window.innerWidth;
+            this.y = getRandom('y');
+            this.s = getRandom('s');
+            this.r = getRandom('r');
+          }
+        }
+      }
+    
+      SakuraList = function() {
+        this.list = [];
+      }
+      SakuraList.prototype.push = function(sakura) {
+        this.list.push(sakura);
+      }
+      SakuraList.prototype.update = function() {
+        for(var i = 0, len = this.list.length; i < len; i++) {
+          this.list[i].update();
+        }
+      }
+      SakuraList.prototype.draw = function(cxt) {
+        for(var i = 0, len = this.list.length; i < len; i++) {
+          this.list[i].draw(cxt);
+        }
+      }
+      SakuraList.prototype.get = function(i) {
+        return this.list[i];
+      }
+      SakuraList.prototype.size = function() {
+        return this.list.length;
+      }
+    
+      function getRandom(option) {
+        var ret, random;
+        switch(option) {
+          case 'x':
+            ret = Math.random() * window.innerWidth;
+            break;
+          case 'y':
+            ret = Math.random() * window.innerHeight;
+            break;
+          case 's':
+            ret = Math.random();
+            break;
+          case 'r':
+            ret = Math.random() * 5;
+            break;
+          case 'fnx':
+            random = -0.5 + Math.random() * 1;
+            ret = function(x, y) {
+              return x + 0.5 * random - 1;
+            };
+            break;
+          case 'fny':
+            random = 0.5 + Math.random() * 0.5
+            ret = function(x, y) {
+              return y + random;
+            };
+            break;
+          case 'fnr':
+            random = Math.random() * 0.01;
+            ret = function(r) {
+              return r + random;
+            };
+            break;
+        }
+        return ret;
+      }
+    
+      function startSakura() {
+    
+        requestAnimationFrame = window.requestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.msRequestAnimationFrame ||
+          window.oRequestAnimationFrame;
+        var canvas = document.createElement('canvas'),
+          cxt;
+        staticx = true;
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+        canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
+        canvas.setAttribute('id', 'canvas_sakura');
+        document.getElementsByTagName('body')[0].appendChild(canvas);
+        cxt = canvas.getContext('2d');
+        var sakuraList = new SakuraList();
+        for(var i = 0; i < 50; i++) {
+          var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
+          randomX = getRandom('x');
+          randomY = getRandom('y');
+          randomR = getRandom('r');
+          randomS = getRandom('s');
+          randomFnx = getRandom('fnx');
+          randomFny = getRandom('fny');
+          randomFnR = getRandom('fnr');
+          sakura = new Sakura(randomX, randomY, randomS, randomR, {
+            x: randomFnx,
+            y: randomFny,
+            r: randomFnR
+          });
+          sakura.draw(cxt);
+          sakuraList.push(sakura);
+        }
+        stop = requestAnimationFrame(function() {
+          cxt.clearRect(0, 0, canvas.width, canvas.height);
+          sakuraList.update();
+          sakuraList.draw(cxt);
+          stop = requestAnimationFrame(arguments.callee);
+        })
+      }
+    
+      window.onresize = function() {
+        var canvasSnow = document.getElementById('canvas_snow');
+        canvasSnow.width = window.innerWidth;
+        canvasSnow.height = window.innerHeight;
+      }
+    
+      img.onload = function() {
+        startSakura();
+      }
+    
+      function stopp() {
+        if(staticx) {
+          var child = document.getElementById("canvas_sakura");
+          child.parentNode.removeChild(child);
+          window.cancelAnimationFrame(stop);
+          staticx = false;
+        } else {
+          startSakura();
+        }
+      }
+    </script
+  
+  </body>
+</html>

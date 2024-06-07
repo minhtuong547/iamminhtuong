@@ -1,0 +1,61 @@
+RewriteEngine On
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+</IfModule>
+ErrorDocument 404 /404.html
+
+
+RewriteRule ^Auth/Profile/ChangePassword public/client/Profile-ChangePassword.php [L]
+RewriteRule ^Auth/Profile$ public/client/Profile.php [L]
+RewriteRule ^Auth/Register$ public/client/Register.php [L]
+RewriteRule ^Auth/Login$ public/client/Login.php [L]
+RewriteRule ^Auth/Logout$ public/client/Logout.php [L]
+RewriteRule ^Auth/ForgotPassword$ public/client/ForgotPassword.php [L]
+RewriteRule ^Auth/ChangePassword$ public/client/ChangePassword.php [L]
+RewriteRule ^Recharge$ public/client/Recharge.php [L]
+RewriteRule ^Accounts/([A-Za-z0-9-]+) public/client/Accounts.php?id=$1 [L]
+RewriteRule ^Groups/([A-Za-z0-9-]+) public/client/Groups.php?id=$1 [L]
+RewriteRule ^Orders/([A-Za-z0-9-]+) public/client/Orders.php?id=$1 [L]
+RewriteRule ^History$ public/client/History.php [L]
+RewriteRule ^Localbank$ public/client/Localbank.php [L]
+RewriteRule ^History/Card$ public/client/HistoryCard.php [L]
+RewriteRule ^Ket-noi-api$ public/client/Api.php [L]
+RewriteRule ^Transfers$ public/client/Transfers.php [L]
+RewriteRule ^Blogs$ public/client/Blogs.php [L]
+RewriteRule ^Blog/([A-Za-z0-9-]+) public/client/XemBlog.php?id=$1 [L]
+RewriteRule ^BuyCard$ public/client/BuyCard.php [L]
+RewriteRule ^Topup$ public/client/Topup.php [L]
+RewriteRule ^Bank$ public/client/Bank.php [L]
+RewriteRule ^nap-the-cao/$ public/client/NapThe.php [L]
+RewriteRule ^bien-dong-so-du/$ public/client/BienDongSoDu.php [L]
+RewriteRule ^nap-tien-qua-ngan-hang/$ public/client/Recharge-Bank.php [L]
+RewriteRule ^dich-vu/([A-Za-z0-9-]+) public/client/CayThue.php?id=$1 [L]
+RewriteRule ^History/Cay-thue/$ public/client/HistoryCayThue.php [L]
+
+
+RewriteRule ^admin/$ public/admin/Home.php [L]
+RewriteRule ^Admin/$ public/admin/Home.php [L]
+RewriteRule ^Admin$ public/admin/Home.php [L]
+RewriteRule ^Admin/Home$ public/admin/Home.php [L]
+RewriteRule ^Admin/Users$ public/admin/Users.php [L]
+RewriteRule ^Admin/User/Edit/([A-Za-z0-9-]+) public/admin/EditUser.php?id=$1 [L]
+RewriteRule ^Admin/Setting$ public/admin/Setting.php [L]
+RewriteRule ^Admin/Cards$ public/admin/Cards.php [L]
+RewriteRule ^Admin/Bank$ public/admin/Bank.php [L]
+RewriteRule ^Admin/Category$ public/admin/Category.php [L]
+RewriteRule ^Admin/Groups/([A-Za-z0-9-]+) public/admin/Groups.php?id=$1 [L]
+RewriteRule ^Admin/Group/Edit/([A-Za-z0-9-]+) public/admin/EditGroup.php?id=$1 [L]
+RewriteRule ^Admin/Accounts/([A-Za-z0-9-]+) public/admin/Accounts.php?id=$1 [L]
+RewriteRule ^Admin/Account/Edit/([A-Za-z0-9-]+) public/admin/EditAccount.php?id=$1 [L]
+RewriteRule ^Admin/Account-Sold$ public/admin/Account-Sold.php [L]
+RewriteRule ^Admin/Storage$ public/admin/Storage.php [L]
+RewriteRule ^Admin/Theme$ public/admin/Theme.php [L]
+RewriteRule ^Admin/Category/Cay-thue/$ public/admin/CategoryCayThue.php [L]
+RewriteRule ^Admin/Groups-cay-thue/([A-Za-z0-9-]+) public/admin/GroupsCayThue.php?id=$1 [L]
+</IfModule>

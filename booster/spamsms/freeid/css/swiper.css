@@ -1,0 +1,66 @@
+.swiper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    font-size: 15px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  .mySwiper2 {
+    width: 100%;
+  }
+  
+  .mySwiper2 .swiper-slide {
+    background: rgba(4, 10, 33, 0.7);
+    height: 400px;
+    overflow: auto;
+  }
+  
+  .mySwiper .swiper-slide {
+    width: 100%;
+    opacity: 0.4;
+  }
+  
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .link {
+    color: rgba(219, 22, 78);
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+    font-family: monospace;
+  }
+  
+  .bold {
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: monospace;
+  }
+  
+  .text {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: monospace;
+  }
+  
+  .title {
+    cursor: pointer;
+    padding: 10px 10px 20px 10px;
+    font-size: 17px;
+    text-align: center;
+  }

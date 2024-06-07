@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đinh Minh Tướng</title>
+    <link rel="stylesheet" href="assets/snow.css" />
+    <link href='https://i.imgur.com/MF1dSTW.jpg' rel="icon" type="image/x-icon" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <audio src="https://docs.google.com/uc?id=1XFXVRz7mld9tccCkyNYrRl3_Ta5cBg4L" id="myaudio" autoplay="autoplay"></audio>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <script type='text/javascript'>
+                ! function(e, t, a) {
+                    function n() {
+                        c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), o(), r()
+                    }
+    
+                    function r() {
+                        for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999");
+                        requestAnimationFrame(r)
+                    }
+    
+                    function o() {
+                        var t = "function" == typeof e.onclick && e.onclick;
+                        e.onclick = function(e) {
+                            t && t(), i(e)
+                        }
+                    }
+    
+                    function i(e) {
+                        var a = t.createElement("div");
+                        a.className = "heart", d.push({
+                            el: a,
+                            x: e.clientX - 5,
+                            y: e.clientY - 5,
+                            scale: 1,
+                            alpha: 1,
+                            color: s()
+                        }), t.body.appendChild(a)
+                    }
+    
+                    function c(e) {
+                        var a = t.createElement("style");
+                        a.type = "text/css";
+                        try {
+                            a.appendChild(t.createTextNode(e))
+                        } catch (t) {
+                            a.styleSheet.cssText = e
+                        }
+                        t.getElementsByTagName("head")[0].appendChild(a)
+                    }
+    
+                    function s() {
+                        return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+                    }
+                    var d = [];
+                    e.requestAnimationFrame = function() {
+                        return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function(e) {
+                            setTimeout(e, 1e3 / 60)
+                        }
+                    }(), n()
+                }(window, document);
+            </script>
+    <style>
+    i.fas.fa-check {
+        background: #1266f1;
+        color: #fff;
+        padding: 4px;
+        border-radius: 100%;
+        font-size: 8px;
+        vertical-align: middle;
+    }
+             </style>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="author" content="Đinh Minh Tướng">
+    <link rel="stylesheet" href="assets/main.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css">
+
+
+    <div class="preloader">
+    <div class="preloader__wrap">
+    <div class="circle-pulse">
+    <div class="circle-pulse__1"></div>
+    <div class="circle-pulse__2"></div>
+    </div>
+    <div class="preloader__progress"><span></span></div>
+    </div>
+    </div>
+    <script>
+    Swal.fire(
+    'Welcome !',
+    'Chào Mừng Bạn Đến Với Website Của Đinh Minh Tướng.',
+    'success'
+    )    
+    </script>
+     <main class="main">
+    
+    <div class="header-image">
+    <div class="js-parallax" style="background-image: url(img/profile.jpg);"></div>
+    </div>
+    <div class="container gutter-top ">
+    
+    <header class="header box">
+    <div class="header__left">
+    <div class="header__photo">
+    <img class="header__photo-img" src="https://i.imgur.com/N2359ao.jpg" alt="">
+    </div>
+    <div class="header__base-info">
+    <h2 class="title titl--h1"><b>Đinh Minh Tướng<img src="img/tich-xanh.png" alt="Đã Xác Minh" style="height: 24px;"></b></h2>
+    <div class="skill-item" style="color: #00e1ff;"><b>CODER - DEV</b></div>
+    <ul class="header__social">
+    <li><a href="https://www.facebook.com/DoMoTo.IT" target="_blank"><span class="nav-link-icon mr-1">
+    <i class="icon-img"><img height="20" src="img/fb.svg"></i></span></a>
+    <a href="https://zalo.me/0376017413" target="_blank"><span class="nav-link-icon mr-1">
+    <i class="icon-img"><img height="20" src="img/zalo.png"></i>
+    </span></a>
+    </ul>
+    </div>
+    </div>
+    <div class="header__right">
+    <ul class="header__contact">
+    <li><span class="overhead"><i class="icon-img"><img height="25" src="img/mail.png"></i></span>
+    <a href="mailto:minhtuong547@gmail.com" target="_blank">
+    <font color="white"><b><span><span ">minhtuong547@gmail.com</span></span></b></font>
+    </a>
+    </li>
+    <li><span class="overhead"><i class="icon-img"><img height="25" src="img/phone.png"></i></span>
+    <a href="tel:0376017413" target="_blank">
+    <font color="white">0376017413<b></b></font>
+    </a>
+    </li>
+    </ul>
+    <ul class="header__contact">
+    <li><span class="overhead"><i class="icon-img"><img height="25" src="img/puplic.png"></i></span>
+    <font color="white"><b>Bình Phước, Việt Nam</b></font>
+    </li>
+    </ul>
+    </div>
+    </header>
+    <div class="row sticky-parent">
+    
+    
+    <div class="col-12">
+    <div class="box box-content">
+    
+    <div class="mt-1">
+    <h3 class="title title--h2 first-title title__separate">Thông Tin Thanh Toán</h3>
+    <div class="row">
+    
+    <div class="col-12 col-lg-6">
+    <div class="case-item">
+    <img src="img/mbbank.png" height="55px">
+    <div>&nbsp;
+    <h4 class="title title--h4">MB Bank</h4>
+    <p><b>DINH TU QUAN</b><br><b>005092010</b></p>
+    <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('005092010')">COPY</button>
+     </div>
+    </div>
+    </div>
+    
+    <div class="col-12 col-lg-6">
+    <div class="case-item">
+    <img src="img/momo.png" height="55px">
+    <div>&nbsp;
+    <h4 class="title title--h4">Ví Momo</h4>
+    <p><b>Đinh Minh Tướng</b><br><b>0395640102</b></p>
+    <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('0395640102')">COPY</button>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    </div>
+    
+    <footer class="footer">Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script><a href="https://www.facebook.com/DoMoTo.IT" target="_blank"> Đinh Minh Tướng</a>. All Rights Reserved
+    <br>
+    Anti DDoS By <a href="#">Đinh Minh Tướng </a>
+    </footer>
+    </div>
+    </div>
+    </div>
+    </main>
+    
+    <svg class="svg-defs">
+    <clippath id="avatar-box">
+    <path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"></path>
+    </clippath>
+    <clippath id="avatar-hexagon">
+    <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"></path>
+    </clippath>
+    </svg>
+    <div class="back-to-top"></div>
+    
+    <script>
+    function copy(text) {
+      document.body.insertAdjacentHTML("beforeend","<div id=\"copy\" contenteditable>"+text+"</div>")
+      document.getElementById("copy").focus();
+      document.execCommand("selectAll");
+      document.execCommand("copy");
+      document.getElementById("copy").remove();
+      Swal.fire(
+      'Copy !',
+      'Sao Chép Thành Công',
+      'success'
+    )
+    }
+    </script>
+    <script data-cfasync="false" src="assets/emailcontact.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.min.js"></script>
+    <script src="assets/demo/plugins-demo.js"></script>
+</body>
+</html>

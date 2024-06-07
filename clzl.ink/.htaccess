@@ -1,0 +1,87 @@
+# code by SCD
+<Files ".htaccess">
+  Require all denied
+</Files>
+
+# AllowOverride .htaccess
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+ErrorDocument 404 /Views/404.php
+# Pages
+RewriteRule ^([A-Za-z0-9-]+)/$ Views/admin/home.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/home$ Views/admin/home.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/game$ Views/admin/game.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/player-list$ Views/admin/player-list.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/player-block$ Views/admin/player-block.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/muster$ Views/admin/muster.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/setting$ Views/admin/setting.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/gifcode$ Views/admin/gifcode.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/top$ Views/admin/top.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/zalopay$ Views/admin/zalopay.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/transfer$ Views/admin/transfer.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/bank_transfer$ Views/admin/bank_transfer.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/history$ Views/admin/history.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/history/more$ Views/admin/more.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/history-error$ Views/admin/history-error.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/check_history$ Views/admin/check_history.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/check_mgd$ Views/admin/check_mgd.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/history-transfer$ Views/admin/history-transfer.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/list-account$ Views/admin/list-account.php [L]
+RewriteRule ^([A-Za-z0-9-]+)/login$ Views/admin/login.php [L]
+
+
+# -----------------------------[ API ]-----------------------------------
+# auth
+RewriteRule ^api/admin/login$ Controllers/auth/login.php [L]
+RewriteRule ^api/admin/logout$ Controllers/auth/logout.php [L]
+
+
+# zalopay
+RewriteRule ^api/zalopay/sendopt$ Controllers/zalopay/sendopt.php [L]
+RewriteRule ^api/zalopay/login$ Controllers/zalopay/login.php [L]
+RewriteRule ^api/zalopay/edit$ Controllers/zalopay/edit.php [L]
+RewriteRule ^api/zalopay/edit_his$ Controllers/zalopay/edit_his.php [L]
+RewriteRule ^api/zalopay/history$ Controllers/zalopay/history.php [L]
+RewriteRule ^api/zalopay/reload_balance$ Controllers/zalopay/reload_balance.php [L]
+RewriteRule ^api/zalopay/sendmoney$ Controllers/zalopay/sendmoney.php [L]
+RewriteRule ^api/zalopay/send_bank$ Controllers/zalopay/send_bank.php [L]
+RewriteRule ^api/zalopay/name_bank$ Controllers/zalopay/name_bank.php [L]
+RewriteRule ^api/zalopay/block_list$ Controllers/zalopay/block_list.php [L]
+RewriteRule ^api/zalopay/payback$ Controllers/zalopay/payback.php [L]
+RewriteRule ^api/zalopay/check_his$ Controllers/zalopay/check_his.php [L]
+RewriteRule ^api/zalopay/check_mgd$ Controllers/zalopay/check_mgd.php [L]
+
+# setting
+RewriteRule ^api/settings/genaral$ Controllers/settings/genaral.php [L]
+RewriteRule ^api/settings/top_fake$ Controllers/settings/top_fake.php [L]
+RewriteRule ^api/settings/change_pass$ Controllers/settings/change_pass.php [L]
+RewriteRule ^api/settings/day_miss$ Controllers/settings/day_miss.php [L]
+
+# event
+RewriteRule ^api/event/gifcode$ Controllers/event/gifcode.php [L]
+
+
+# cron
+RewriteRule ^api/zalopay/cron$ Controllers/zalopay/cron_soicoder.php [L]
+
+
+# api
+
+RewriteRule ^api/game/edit$ Controllers/game/edit.php [L]
+
+
+# public v1
+RewriteRule ^api/v1/getPhone$ Controllers/public/getphone.php [L]
+RewriteRule ^api/v1/getReward$ Controllers/public/getReward.php [L]
+RewriteRule ^api/v1/getHistory$ Controllers/public/getHistory.php [L]
+RewriteRule ^api/public/lichsu$ Controllers/public/lichsu.php [L]
+
+# public v2
+RewriteRule ^api/v2/win$ /Controllers/public/win.php [L]
+RewriteRule ^api/v2/getPhone$ /Controllers/public/getphonev2.php [L]
+RewriteRule ^api/v2/list_phone$ /Controllers/public/list_momo.php [L]
+RewriteRule ^api/v2/gifcode$ /Controllers/public/gifcode.php [L]
+

@@ -1,0 +1,36 @@
+<svg width="200px"  height="200px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ellipsis" style="background-color: #fff">
+  <style>
+    circle:nth-child(1) {
+      stroke: #fff;
+      stroke-width: 5;
+      fill: none;
+    }
+    circle:nth-child(2) {
+      stroke: #333;
+      stroke-width: 5;
+      fill: none;
+      stroke-dasharray: 251.2;
+      stroke-dashoffset: 251.2;
+      animation: loading 5s ease-in-out infinite;
+    }
+    @keyframes loading {
+      0% {
+        stroke-dashoffset: 251.2;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    text {
+      font-family: Arial, sans-serif;
+      fill: #fff;
+    }
+    h6 {
+        font-family: Arial, sans-serif;
+        fill: #fff;
+    }
+  </style>
+  <circle cx="50" cy="50" r="40" />
+  <circle cx="50" cy="50" r="40" />
+  <text x="50" y="50" text-anchor="middle" dy="5"><tspan id="percent">Loading...</tspan></text>
+</svg>

@@ -1,0 +1,23 @@
+ <files ".htaccess">
+    order allow,deny
+    deny from all
+    </files>
+    
+    RewriteEngine On
+    ErrorDocument 404 /404.php
+    #bill
+    RewriteRule ^fake-bill-mbbank$ mod/mb-bank.php [L]
+    RewriteRule ^fake-bill-techcombank$ mod/techcombank.php [L]
+    RewriteRule ^fake-bill-vietcombank$ mod/vietcombank.php [L]
+    RewriteRule ^fake-bill-acb-bank$ mod/acb.php [L]
+    RewriteRule ^fake-bill-vietinbank$ mod/vietinbank.php [L]
+    #sodu
+    RewriteRule ^fake-sodu-mbbank$ mod/sodu-mbbank.php [L]
+    RewriteRule ^fake-sodu-techcombank$ mod/sodu-techcombank.php [L]
+    #api
+    RewriteRule ^api/nganhang$ api/nganhang.php [L]
+    #biendongsodu
+    RewriteRule ^fake-bdsd$ mod/biendong.php [L]
+    #nguoidung
+    RewriteRule ^login$ resource/login.php [L]
+    RewriteRule ^register$ resource/register.php [L]
